@@ -1,5 +1,6 @@
-# Certificate Creator
+# Certitude App
 This is a product developed to make certificates for a huge pool of people by fetching data from excel and directly sending them over email.
+Visit the website [here](https://certitude.community.techalier.com/)
 ### Curated & Modified by:- Parjanya Modi & Sumedh D Karanth.
 
 # Guideline
