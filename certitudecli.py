@@ -15,7 +15,7 @@ def font_color():
     fontcolor = input("\nEnter the colour of font in hexcode:")
     return fontcolor
 
-def make_cert(name_l, img):
+def make_cert(name_list, img):
     fontdeta = font_detail()
     fontcolo = font_color()
     folder = input("\nEnter a name to make folder:")
@@ -35,11 +35,27 @@ def save_cert(name, image, fontd, fontc, foldername, w, h):
     image_source.save("./"+foldername+"/" + name+".pdf")
     print('printing certificate of: '+name)
 
+def remove_dot(name):
+    dname = name.split(" ")
+    lst = []
+    for i in dname:
+        if("." in i):
+            l = i.split(".")
+            for j in l:
+                if(j!=''):
+                    lst.append(j)
+        else:
+            lst.append(i)
+    rname = ' '.join(lst)
+    return rname
+
 def get_capitalized_name(name):
-    lst = name.split()
+    rnames = remove_dot(name)
+    lst = rnames.split()
+    print(lst)
     capi_name = ' '.join([a.capitalize() for a in lst])
     return capi_name
-
+    
 if __name__ == '__main__':
     plt = platform.system()
     if plt == "Windows":
@@ -51,7 +67,7 @@ if __name__ == '__main__':
     else:
         os.system("clear")
 
-    print("\nWelcome to the Certitude App!\n[link=http://certitude.community.techalier.com]CLI version 1.0.1[/link]\nAll the files required for this procedure should be in the same folder as this python app.\n\nDeveloped by Parjanya Modi & Sumedh D Karanth. Powered by [link=https://community.techalier.com]Techalier Community[/Link]")
+    print("\nWelcome to the Certitude App!\n[link=http://certitude.community.techalier.com]CLI version 1.0.3[/link]\nAll the files required for this procedure should be in the same folder as this python app.\n\nDeveloped by Parjanya Modi & Sumedh D Karanth. Powered by [link=https://community.techalier.com]Techalier Community[/Link]")
     
     print("\nMenu\n1.Make Certificate on computer\n2.Exit the app")
     choice = int(input("\nEnter the choice:"))
