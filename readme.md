@@ -24,10 +24,10 @@ Visit the website [here](https://certitude.community.techalier.com/)
 
 ### Non Windows OS (Linux/MacOS)
 1. Open the terminal the type in the follow command:
-For Example:- 
-```cli
-cd Downloads/certitude/
-```
+    >For Example:- 
+    ```cli
+    cd Downloads/certitude/
+    ```
 4. It is necessary to have python installed on your system.
     > Install python from following link [https://www.python.org/downloads/](https://www.python.org/downloads/)
     > Or install using cli with the following command:
@@ -36,10 +36,10 @@ cd Downloads/certitude/
     sudo apt-get install pip3
     ```
 5. Run the following command in the terminal
-```cli
-pip install -r requirements.txt
-```
+    ```cli
+    pip install -r requirements.txt
+    ```
 6. Once the requirements are installed, Run the python file by the following command
-```cli
-python certitudecli.py
-```
+    ```cli
+    python certitudecli.py
+    ```
