@@ -33,13 +33,15 @@ Visit the website [here](https://certitude.community.techalier.com/)
     > Or install using cli with the following command:
     ```cli
     sudo apt-get install python3
+    ```
+    ```cli
     sudo apt-get install pip3
     ```
 5. Run the following command in the terminal
     ```cli
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
     ```
 6. Once the requirements are installed, Run the python file by the following command
     ```cli
-    python certitudecli.py
+    python3 certitudecli.py
     ```
